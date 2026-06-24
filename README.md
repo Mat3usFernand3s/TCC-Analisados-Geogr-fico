@@ -21,36 +21,37 @@ Transformar dados brutos governamentais (frequentemente planilhas CSV com milhar
   * Injeção de painel fixo com o **Ranking Top 20** dos repasses públicos.
 
 ## 📁 Estrutura do Repositório
-* `main_gui_universal.exe`: Aplicativo executável compilado (*standalone*). O usuário final **não precisa** ter o Python ou qualquer biblioteca instalada em seu computador para rodar o sistema.
-* `coordenadas_brasil.csv`: Base de dados geográfica contendo a latitude e longitude dos 5.570 municípios brasileiros, necessária para a geocodificação offline.
+* `coordenadas_brasil.csv`: Base de dados geográfica (latitude e longitude dos 5.570 municípios) necessária para a geocodificação offline.
 * `main_gui_universal.py`: Código-fonte original em Python mantido no repositório para fins de consulta, transparência e auditoria lógica.
-* `TCC - Mateus Fernandes dos Santos.pdf`: Artigo científico completo detalhando a fundamentação teórica, metodologia arquitetural e discussões dos resultados.
-* `Apresentação TCC v5.pptx`: Material de apoio visual utilizado na defesa para a banca de avaliação.
+* `TCC - Mateus Fernandes dos Santos.pdf`: Artigo científico completo detalhando a fundamentação teórica e discussão dos resultados.
+* `Apresentação TCC v5.pptx`: Material de apoio visual utilizado na defesa.
+* **Releases (Lançamentos):** Contém o `main_gui_universal.exe`, o aplicativo executável compilado (*standalone*).
+
+---
 
 ## 🚀 Como Executar o Projeto
 
-Para rodar o sistema de geoinformação, **não é necessário instalar nenhuma dependência ou utilizar o terminal de comando**. Todo o ecossistema de código foi empacotado para ser executado de maneira direta e visual.
+Todo o ecossistema de código foi empacotado para ser executado de maneira direta e visual, sem a necessidade de instalar o Python ou usar o terminal.
 
-### Passo a passo para execução:
+### Passo a passo para execução (Usuário Final):
 
-1. Baixe os arquivos **`main_gui_universal.exe`** e **`coordenadas_brasil.csv`** deste repositório (ou clone o repositório usando o comando abaixo):
+1. **Baixe o Executável:** Vá até a seção **Releases** (Lançamentos) localizada na lateral direita desta página e faça o download da versão mais recente do arquivo `main_gui_universal.exe`.
+2. **Baixe a Base Geográfica:** Volte para a página inicial deste repositório, clique no arquivo `coordenadas_brasil.csv` e faça o download (ícone de download no canto superior direito do arquivo).
+3. **Organize os arquivos:** Coloque o executável `main_gui_universal.exe` e o arquivo `coordenadas_brasil.csv` **exatamente na mesma pasta** no seu computador.
+4. **Execute:** Dê um duplo clique no arquivo `main_gui_universal.exe`.
+5. Na interface gráfica:
+   * Clique em **"Selecionar Arquivo CSV"** e importe uma planilha de dados abertos municipal (ex: Portal da Transparência).
+   * Selecione as colunas que representam o **Município**, o **Valor** e a **UF**.
+6. Clique em **"GERAR MAPA ANALÍTICO"**. O mapa interativo se abrirá automaticamente no seu navegador.
 
+### Para Desenvolvedores (Acesso ao Código-Fonte)
+Caso deseje rodar a aplicação via código e terminal, clone o repositório e instale as dependências:
 ``bash
-git clone [https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git](https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git)``
-
-1. Certifique-se de que o arquivo coordenadas_brasil.csv esteja localizado na mesma pasta/diretório do executável main_gui_universal.exe.
-
-2. Dê um duplo clique no arquivo main_gui_universal.exe para iniciar o programa.
-
-3. Na interface gráfica que se abrirá na sua tela:
-
-  Clique em "Selecionar Arquivo CSV" e importe qualquer planilha de dados abertos municipal (ex: dados de transferências do Portal da Transparência).
-
-  Nos menus suspensos (Comboboxes), selecione quais colunas do seu arquivo representam o Município, o Valor e a UF.
-
-4. Clique no botão verde "GERAR MAPA ANALÍTICO".
-
-O sistema processará as informações instantaneamente de forma offline e abrirá o dashboard analítico com o mapa interativo diretamente no seu navegador de internet padrão.
+git clone [https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git](https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git)
+pip install pandas folium
+python main_gui_universal.py``
 
 👨‍💻 Autor
-Mateus Fernandes dos Santos Bacharelado em Sistemas de Informação - UDESC
+Mateus Fernandes dos Santos
+
+Bacharelado em Sistemas de Informação - UDESC
