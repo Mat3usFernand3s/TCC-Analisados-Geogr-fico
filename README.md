@@ -34,6 +34,7 @@ Para rodar o sistema de geoinformação, **não é necessário instalar nenhuma 
 ### Passo a passo para execução:
 
 1. Baixe os arquivos **`main_gui_universal.exe`** e **`coordenadas_brasil.csv`** deste repositório (ou clone o repositório usando o comando abaixo):
+
 ``bash
 git clone [https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git](https://github.com/Mat3usFernand3s/TCC-Analisados-Geogr-fico.git)``
 
