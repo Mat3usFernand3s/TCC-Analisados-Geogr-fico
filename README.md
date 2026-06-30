@@ -55,7 +55,7 @@ python main_gui_universal.py``
 Mateus Fernandes dos Santos
 Bacharelado em Sistemas de Informação - UDESC
 
-<img src="https://github.com/user-attachments/assets/f05c93ca-3c41-4308-8758-93620f9f6b50" width="600">
+<img src="https://github.com/user-attachments/assets/f05c93ca-3c41-4308-8758-93620f9f6b50" width="300">
 <img src="https://github.com/user-attachments/assets/1690f165-0266-48cb-9a9d-58e826a0a268" width="600">
 <img src="https://github.com/user-attachments/assets/f2dc7c3e-8d63-4a13-9a65-470fe08443a3" width="600">
 
